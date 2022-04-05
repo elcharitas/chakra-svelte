@@ -7,8 +7,16 @@
             "examples/*"
         ]
     },
+    "preconstruct": {
+        "packages": [
+            "packages/*"
+        ]
+    },
     "scripts": {
-        "pkg": "hygen packages new"
+        "pkg": "hygen packages new",
+        "dev": "preconstruct dev",
+        "build:tokens": "",
+        "build": "preconstruct build && yarn build:tokens"
     },
     "author": "elcharitas <jonathanirhodia@gmail.com>",
     "license": "MIT",
