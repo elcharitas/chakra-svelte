@@ -1,0 +1,13 @@
+{
+    "name": "chakra-svelte",
+    "version": "1.0.0",
+    "workspaces": {
+        "packages": [
+            "packages/*",
+            "examples/*"
+        ]
+    },
+    "author": "elcharitas <jonathanirhodia@gmail.com>",
+    "license": "MIT",
+    "private": true
+}
