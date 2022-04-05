@@ -1,3 +1,6 @@
+---
+to: "<%= h.dir(name) %>/.gitignore"
+---
 # build
 dist
 
