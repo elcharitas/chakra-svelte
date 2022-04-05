@@ -6,6 +6,14 @@ const config = {
     author: "elcharitas <jonathanirhodia@gmail.com>",
 };
 
+/**
+ * Gets out the package name
+ *
+ * @param {string} name
+ * @returns
+ */
+const pkg = (name) => `${config.org}/${dasherize(name)}`;
+
 module.exports = {
     templates: `${__dirname}/templates`,
     helpers: {
@@ -13,9 +21,10 @@ module.exports = {
          * Reads a configuration value from the config object.
          *
          * @param {string} key
+         * @param {string} def
          * @returns
          */
-        config: (key) => config[key],
+        config: (key, def) => (def ? def : config[key]),
 
         /**
          * Change case of strings to kebab case
@@ -26,10 +35,17 @@ module.exports = {
         dasherize: (str) => dasherize(str),
 
         /**
-         * Returns the package name, eg: @chakra-svelte/component
+         * Returns the package name, eg: chakra-svelte/component
          * @param {string} name
          * @returns
          */
-        package: (name) => `${config.org}/${dasherize(name)}`,
+        package: (name) => `@${pkg(name)}`,
+
+        /**
+         * Returns the package dir, eg: packages/chakra-svelte/component
+         * @param {string} name
+         * @returns
+         */
+        dir: (name) => `packages/${dasherize(name)}`,
     },
 };
