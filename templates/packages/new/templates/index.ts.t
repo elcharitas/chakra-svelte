@@ -1,4 +1,4 @@
 ---
-to: "<%= h.dir(name) %>/index.js"
+to: "<%= h.dir(name) %>/index.ts"
 ---
 export * from './src'
