@@ -12,7 +12,7 @@ const config = {
  * @param {string} name
  * @returns
  */
-const pkg = (name) => `${config.org}/${dasherize(name)}`;
+const pkg = (name, sep) => `${config.org}${sep}${dasherize(name)}`;
 
 module.exports = {
     templates: `${__dirname}/templates`,
@@ -27,19 +27,12 @@ module.exports = {
         config: (key, def) => (def ? def : config[key]),
 
         /**
-         * Change case of strings to kebab case
-         *
-         * @param {string} str
-         * @returns kebab case string
-         */
-        dasherize: (str) => dasherize(str),
-
-        /**
          * Returns the package name, eg: chakra-svelte/component
          * @param {string} name
          * @returns
          */
-        package: (name) => `@${pkg(name)}`,
+        package: (name, sep = "/") =>
+            `${sep === "/" ? "@" : ""}${pkg(name, sep)}`,
 
         /**
          * Returns the package dir, eg: packages/chakra-svelte/component
