@@ -7,6 +7,9 @@
             "examples/*"
         ]
     },
+    "scripts": {
+        "pkg": "hygen packages new"
+    },
     "author": "elcharitas <jonathanirhodia@gmail.com>",
     "license": "MIT",
     "private": true,
