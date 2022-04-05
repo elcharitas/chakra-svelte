@@ -9,5 +9,8 @@
     },
     "author": "elcharitas <jonathanirhodia@gmail.com>",
     "license": "MIT",
-    "private": true
+    "private": true,
+    "devDependencies": {
+        "hygen": "^6.2.0"
+    }
 }
