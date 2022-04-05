@@ -5,12 +5,10 @@ to: "<%= h.dir(name) %>/package.json"
   "name": "<%= h.package(name) %>",
   "version": "0.0.0",
   "description": "<%= h.config("org") %>'s <%= name %> package",
-  "source": "src/index.js",
-  "exports": {
-    "require": "./index.js",
-  },
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "source": "src/index.ts",
+    "main": "dist/<%= h.package(name, "-") %>.cjs.js",
+    "module": "dist/<%= h.package(name, "-") %>.esm.js",
+    "types": "dist/<%= h.package(name, "-") %>.cjs.d.ts",
   "scripts": {
     "clean": "rimraf --no-glob ./dist",
   },
@@ -28,7 +26,7 @@ to: "<%= h.dir(name) %>/package.json"
   "repository": {
     "type": "git",
     "url": "https://github.com/elcharitas/chakra-svelte",
-    "directory": "packages/<%= h.package(name) %>"
+    "directory": "<%= h.dir(name) %>"
   },
   "keywords": [
     "emotion",
@@ -37,6 +35,7 @@ to: "<%= h.dir(name) %>/package.json"
     "ui",
     "svelte-components",
     "chakra-ui",
+    "<%= h.package(name, "-") %>",
     "accessible",
     "components"
   ],
