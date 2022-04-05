@@ -3,11 +3,9 @@
     "version": "0.0.0",
     "description": "chakra-svelte's ui package",
     "source": "src/index.js",
-    "exports": {
-        "require": "./dist/index.js"
-    },
-    "main": "./dist/index.js",
-    "types": "./index.d.ts",
+    "main": "dist/chakra-svelte-ui.cjs.js",
+    "module": "dist/chakra-svelte-ui.esm.js",
+    "types": "dist/chakra-ui-react.cjs.d.ts",
     "scripts": {
         "clean": "rimraf --no-glob ./dist"
     },
