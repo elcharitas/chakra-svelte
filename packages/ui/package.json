@@ -7,7 +7,7 @@
     "module": "dist/chakra-svelte-ui.esm.js",
     "types": "dist/chakra-svelte-ui.cjs.d.ts",
   "scripts": {
-    "clean": "rimraf --no-glob ./dist",
+    "clean": "rimraf --no-glob ./dist"
   },
   "files": [
     "dist",

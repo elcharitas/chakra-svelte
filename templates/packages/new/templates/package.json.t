@@ -10,7 +10,7 @@ to: "<%= h.dir(name) %>/package.json"
     "module": "dist/<%= h.package(name, "-") %>.esm.js",
     "types": "dist/<%= h.package(name, "-") %>.cjs.d.ts",
   "scripts": {
-    "clean": "rimraf --no-glob ./dist",
+    "clean": "rimraf --no-glob ./dist"
   },
   "files": [
     "dist",
