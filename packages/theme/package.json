@@ -1,0 +1,44 @@
+{
+  "name": "@chakra-svelte/theme",
+  "version": "0.0.0",
+  "description": "chakra-svelte's theme package",
+  "source": "src/index.ts",
+    "main": "dist/chakra-svelte-theme.cjs.js",
+    "module": "dist/chakra-svelte-theme.esm.js",
+    "types": "dist/chakra-svelte-theme.cjs.d.ts",
+  "scripts": {
+    "clean": "rimraf --no-glob ./dist"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "elcharitas <jonathanirhodia@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/elcharitas/chakra-svelte",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elcharitas/chakra-svelte",
+    "directory": "packages/theme"
+  },
+  "keywords": [
+    "emotion",
+    "library",
+    "svelte",
+    "ui",
+    "svelte-components",
+    "chakra-ui",
+    "chakra-svelte-theme",
+    "accessible",
+    "components"
+  ],
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "svelte": "^3.44.0"
+  }
+}
