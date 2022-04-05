@@ -1,4 +1,4 @@
 ---
-to: "<%= h.package(name) %>/index.js"
+to: "<%= h.dir(name) %>/index.js"
 ---
 export * from './src'

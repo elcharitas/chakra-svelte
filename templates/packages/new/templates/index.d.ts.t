@@ -1,5 +1,5 @@
 ---
-to: "<%= h.package(name) %>/index.d.ts"
+to: "<%= h.dir(name) %>/index.d.ts"
 ---
 
 // for information about these interfaces

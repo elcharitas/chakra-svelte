@@ -1,4 +1,4 @@
 ---
-to: "<%= h.package(name) %>/src/index.js"
+to: "<%= h.dir(name) %>/src/index.js"
 ---
 // nothing in here

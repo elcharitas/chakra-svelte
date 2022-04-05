@@ -1,5 +1,5 @@
 ---
-to: "<%= h.package(name) %>/README.md"
+to: "<%= h.dir(name) %>/README.md"
 ---
 <% pkg = h.package(name) -%>
 # <%= pkg %> 

@@ -1,10 +1,10 @@
 ---
-to: "<%= h.package(name) %>/package.json"
+to: "<%= h.dir(name) %>/package.json"
 ---
 {
   "name": "<%= h.package(name) %>",
   "version": "0.0.0",
-  "description": "<%= h.config("org") %>'s <%= name %> Component",
+  "description": "<%= h.config("org") %>'s <%= name %> package",
   "source": "src/index.js",
   "exports": {
     "require": "./index.js",
