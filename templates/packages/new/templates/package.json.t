@@ -22,7 +22,7 @@ to: "<%= h.dir(name) %>/package.json"
   "publishConfig": {
     "access": "public"
   },
-  "author": "<%- h.config('author') %>",
+  "author": "<%- h.config('author', author) %>",
   "license": "MIT",
   "homepage": "https://github.com/elcharitas/chakra-svelte",
   "repository": {

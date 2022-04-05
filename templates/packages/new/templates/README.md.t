@@ -14,7 +14,7 @@ $ yarn add <%= pkg %>
 
 ## License
 
-MIT - <%= h.config("author") %>.
+MIT - <%= h.config("author", author) %>.
 
 
 © 2022
