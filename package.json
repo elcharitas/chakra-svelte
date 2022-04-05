@@ -15,13 +15,14 @@
     "scripts": {
         "pkg": "hygen packages new",
         "dev": "preconstruct dev",
-        "build:tokens": "",
+        "build:tokens": "chakra-cli tokens packages/theme",
         "build": "preconstruct build && yarn build:tokens"
     },
     "author": "elcharitas <jonathanirhodia@gmail.com>",
     "license": "MIT",
     "private": true,
     "devDependencies": {
+        "@chakra-ui/cli": "^1.9.0",
         "@preconstruct/cli": "^2.1.5",
         "hygen": "^6.2.0"
     }
